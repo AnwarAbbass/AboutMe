@@ -14,16 +14,41 @@ p {
   margin: auto;
 }
 
-
 footer {
   color: #8d2141;
   margin: 20px;
   font-size: large;
   position: fixed;
-  left: 0;
-  bottom: 0;
+
   width: 100%;
   text-align: center;
+}
+
+ul {
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul li {
+  font-size: large;
+  margin-left: 35px;
+  line-height: 30px;
+}
+ol {
+  background-color: rgb(250, 215, 228);
+  line-height: 25px;
+  width: 300px;
+  margin: auto;
+  margin-top: 10px;
+}
+ol li {
+  font-size: large;
+  margin-left: 20px;
+}
+
+span {
+  font-weight: bold;
+  color: #8d2141;
 }
 
 h1 {

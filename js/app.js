@@ -1,4 +1,9 @@
 'use strict';
+
+function random ( min, max ) {
+  return Math.floor( Math.random() * ( max - min + 1 ) + min ); //The maximum is inclusive and the minimum is inclusive
+}
+
 let userName = prompt( 'What is your name?' );
 alert( 'Welcome ' + userName );
 
@@ -44,5 +49,42 @@ if ( ansCat === 'no' || ansCat === 'n' ) {
   alert( 'No, not really' );
 }
 
-alert( 'your score is '+ score );
+let myBirth= random( 1,12 );
+let ansBirth;
+for ( let i = 0; i < 4; i++ ) {
+  ansBirth=prompt( 'What is my birthday month?','enter a number' );
+  if ( myBirth===parseInt( ansBirth ) ) {
+    alert( 'This is right' );
+    score=score+1;
+    break;
+  } else if ( myBirth < parseInt( ansBirth ) ){
+    alert( 'too high' );
+  } else if ( myBirth > parseInt( ansBirth ) ) {
+    alert( 'too low' );
+  }
+  if ( i===3 && ( myBirth!==parseInt( ansBirth ) ) ) {
+    alert( `Incorrect, the right answer is ${myBirth}` );
+  }
+}
 
+let y=false;
+let myFilms=['animation','action','science fiction','comedy'];
+let ansFilms;
+for ( let j = 0; j < 6; j++ ) {
+  ansFilms=prompt( 'What is my favorite movies type?' );
+  for ( let i = 0; i < myFilms.length; i++ ) {
+    if( ansFilms.toLowerCase() === myFilms[i] ){
+      alert( 'This is right' );
+      score=score+1;
+      y = true;
+    }
+  }
+  if ( y ) {
+    break;
+  }
+  ansFilms=alert( 'incorrect, try again' );
+}
+
+alert( 'My favorite movies types are '+myFilms );
+alert( userName+', I hope you have fun with guessing game.' );
+alert( `your score is ${score} out of 7` );
