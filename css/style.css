@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(197, 234, 247);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(13, 65, 88);
+}
+
+p {
+  font-size: larger;
+  margin: 13px;
+  font-weight: bold;
+  color: #8d2141;
+  text-align: center justify;
+  width: 500px;
+  margin: auto;
+}
+
+
+footer {
+  color: #8d2141;
+  margin: 20px;
+  font-size: large;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(219, 226, 255);
+  text-align: center;
+  font-size: xx-large;
+  margin: 40px;
+  background-color: #8d2141;
+  /* position: fixed; */
+}
