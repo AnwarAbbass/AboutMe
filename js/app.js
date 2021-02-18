@@ -15,62 +15,65 @@ function userWelcome (){
 userWelcome ();
 
 let score = 0;
-// create my city function
-function myCity (){
-  let ansCity = prompt( 'Am I from Irbid?', 'yes or no' ).toLowerCase();
-  if ( ansCity === 'yes' || ansCity === 'y' ) {
-    alert( 'This is right' );
-    score++;
-  } else if ( ansCity === 'no' || ansCity === 'n' ) {
-    alert( 'No, not really' );
-  }
-
-  let answork = prompt( 'Am I working ?', 'yes or no' ).toLowerCase();
-  if ( answork === 'no' || answork === 'n' ) {
-    alert( 'This is right' );
-    score++;
-  } else if ( answork === 'yes' || answork === 'y' ) {
-    alert( 'No, not really' );
-  }
+// create answer city function
+function answerCity (){
+  let answerCity;
+  do{
+    answerCity = prompt( 'Am I from Irbid?', 'yes or no' ).toLowerCase();
+    if ( answerCity === 'yes' || answerCity === 'y' ) {
+      alert( 'This is right' );
+      score++;
+    } else if ( answerCity === 'no' || answerCity === 'n' ) {
+      alert( 'No, not really' );
+    }
+  }while( !( answerCity === 'yes' || answerCity === 'y' || answerCity === 'no' || answerCity === 'n' ) );
 }
 
-myCity ();
+answerCity ();
 
 //create age function
 function ageQuestion(){
-  let ansAge = prompt( 'Am I 22 years old?' ).toUpperCase();
-  if ( ansAge === 'YES' || ansAge === 'Y' ) {
-    alert( 'This is right' );
-    score++;
-  } else if ( ansAge === 'NO' || ansAge === 'N' ) {
-    alert( 'No, not really' );
-  }
+  let answerAge ;
+  do{
+    answerAge= prompt( 'Am I 22 years old?' ).toUpperCase();
+    if ( answerAge === 'YES' || answerAge === 'Y' ) {
+      alert( 'This is right' );
+      score++;
+    } else if ( answerAge === 'NO' || answerAge === 'N' ) {
+      alert( 'No, not really' );
+    }
+  }while( !( answerAge === 'YES' || answerAge === 'Y' || answerAge === 'NO' || answerAge === 'N' ) );
 }
-
 ageQuestion();
 
 //create grade Question function
 function gradeQuestion(){
-  let ansGrade = prompt( 'Did I graduate with weak grade from university?' ).toLowerCase();
-  if ( ansGrade === 'no' || ansGrade === 'n' ) {
-    alert( 'This is right' );
-    score++;
-  } else if ( ansGrade === 'yes' || ansGrade === 'y' ) {
-    alert( 'No, not really' );
-  }
+  let answerGrade;
+  do{
+    answerGrade= prompt( 'Did I graduate with weak grade from university?' ).toLowerCase();
+    if ( answerGrade === 'no' || answerGrade === 'n' ) {
+      alert( 'This is right' );
+      score++;
+    } else if ( answerGrade === 'yes' || answerGrade === 'y' ) {
+      alert( 'No, not really' );
+    }
+  }while( !( answerGrade === 'yes' || answerGrade === 'y' || answerGrade === 'no' || answerGrade === 'n' ) );
 }
 
 gradeQuestion();
 
 // create cat question function
 function catQuestion(){
-  let ansCat = prompt( 'Have I a cat? ' ).toLowerCase();
-  if ( ansCat === 'no' || ansCat === 'n' ) {
-    alert( 'This is right' );
-    score++;
-  } else if ( ansCat === 'yes' || ansCat === 'y' ) {
-    alert( 'No, not really' );
-  }
+  let answerCat;
+  do{
+    answerCat= prompt( 'Have I a cat? ' ).toLowerCase();
+    if ( answerCat === 'no' || answerCat === 'n' ) {
+      alert( 'This is right' );
+      score++;
+    } else if ( answerCat === 'yes' || answerCat === 'y' ) {
+      alert( 'No, not really' );
+    }
+  }while( !( answerCat === 'yes' || answerCat === 'y' || answerCat === 'no' || answerCat === 'n' ) );
 }
 
 catQuestion();
@@ -102,11 +105,11 @@ birithQuestion();
 let myFilms=['animation','action','science fiction','comedy'];
 function filmQuestion(){
   let y=false;
-  let ansFilms;
+  let questionFilms;
   for ( let j = 0; j < 6; j++ ) {
-    ansFilms=prompt( 'What is my favorite movies type?' );
+    questionFilms=prompt( 'What is my favorite movies type?' );
     for ( let i = 0; i < myFilms.length; i++ ) {
-      if( ansFilms.toLowerCase() === myFilms[i] ){
+      if( questionFilms.toLowerCase() === myFilms[i] ){
         alert( 'This is right' );
         score=score+1;
         y = true;
@@ -115,7 +118,7 @@ function filmQuestion(){
     if ( y ) {
       break;
     }
-    ansFilms=alert( 'incorrect, try again' );
+    questionFilms=alert( 'incorrect, try again' );
   }
 
 }
