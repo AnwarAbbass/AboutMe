@@ -1,61 +1,92 @@
 body {
-  background-color: rgb(197, 234, 247);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  background: url(https://dspncdn.com/a1/media/692x/16/26/40/162640d544da69b8c55d9736104d0efd.jpg);
+  font-family: URW Chancery L, cursive;
   color: rgb(13, 65, 88);
+  width: 60%;
+  margin: auto;
 }
 
 p {
   font-size: larger;
   margin: 13px;
   font-weight: bold;
-  color: #8d2141;
+  color: #864873;
   text-align: center justify;
-  width: 500px;
+  width: 400px;
+  padding: 15px;
+  border-radius: 10px;
   margin: auto;
+  line-height: 30px;
+  background-color: #c3bfdb;
+  font-family: URW Chancery L, cursive;
 }
 
-footer {
-  color: #8d2141;
-  margin: 20px;
+#foot {
+  color: #864873;
   font-size: large;
-  position: fixed;
-
-  width: 100%;
+  font-family: URW Chancery L, cursive;
   text-align: center;
+  padding: 20px;
 }
 
 ul {
-  margin-top: 20px;
-  text-align: center;
+  text-align: center justify;
+  width: 400px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: auto;
+  font-family: URW Chancery L, cursive;
+  background-color: #c3bfdb;
 }
 
 ul li {
   font-size: large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 35px;
   line-height: 30px;
+  color: #864873;
+}
+#paragraph2 {
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  background-color: #f8c1fa;
+  font-family: URW Chancery L, cursive;
+  padding-bottom: 15px;
 }
 ol {
-  background-color: rgb(250, 215, 228);
-  line-height: 25px;
-  width: 300px;
+  background-color: #c3bfdb;
+  text-align: center justify;
+  width: 400px;
+  border-radius: 10px;
   margin: auto;
-  margin-top: 10px;
+  padding: 15px;
+  font-family: URW Chancery L, cursive;
 }
 ol li {
   font-size: large;
-  margin-left: 20px;
+  margin: auto;
+  line-height: 30px;
+  text-align: center justify;
+  width: 400px;
+  color: #864873;
+  border-radius: 10px;
 }
 
 span {
   font-weight: bold;
-  color: #8d2141;
+  color: #864873;
 }
 
 h1 {
-  color: rgb(219, 226, 255);
+  color: #864873;
   text-align: center;
   font-size: xx-large;
-  margin: 40px;
-  background-color: #8d2141;
-  /* position: fixed; */
+  margin: auto;
+  width: 430px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+  font-family: URW Chancery L, cursive;
+  background-color: #c3bfdb;
 }
