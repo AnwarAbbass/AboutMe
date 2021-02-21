@@ -1,12 +1,10 @@
 'use strict';
 
-// create randome number
 function random ( min, max ) {
   return Math.floor( Math.random() * ( max - min + 1 ) + min ); //The maximum is inclusive and the minimum is inclusive
 }
 
 let userName;
-//creat wecome function
 function userWelcome (){
   userName = prompt( 'What is your name?' );
   alert( 'Welcome ' + userName );
@@ -15,7 +13,6 @@ function userWelcome (){
 userWelcome ();
 
 let score = 0;
-// create answer city function
 function answerCity (){
   let answerCity;
   do{
@@ -31,7 +28,6 @@ function answerCity (){
 
 answerCity ();
 
-//create age function
 function ageQuestion(){
   let answerAge ;
   do{
@@ -46,7 +42,6 @@ function ageQuestion(){
 }
 ageQuestion();
 
-//create grade Question function
 function gradeQuestion(){
   let answerGrade;
   do{
@@ -62,7 +57,6 @@ function gradeQuestion(){
 
 gradeQuestion();
 
-// create cat question function
 function catQuestion(){
   let answerCat;
   do{
@@ -78,7 +72,6 @@ function catQuestion(){
 
 catQuestion();
 
-// create brith question function
 function birithQuestion(){
   let myBirth= random( 1,12 );
   let ansBirth;
@@ -101,7 +94,6 @@ function birithQuestion(){
 
 birithQuestion();
 
-//create film question
 let myFilms=['animation','action','science fiction','comedy'];
 function filmQuestion(){
   let y=false;
